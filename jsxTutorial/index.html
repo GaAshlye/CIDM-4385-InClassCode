@@ -6,19 +6,53 @@
         name="viewport">
   <meta content="ie=edge"
         http-equiv="X-UA-Compatible">
-  <title>Document</title>
-  <link href="src/css/main.css"
-        media="screen"
-        rel="stylesheet"
-        type="text/css">
+  <title>Pizza Bandit</title>
   <link crossorigin="anonymous"
         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         rel="stylesheet">
+  <link href="src/css/main.css"
+        media="screen"
+        rel="stylesheet"
+        type="text/css">
 </head>
 <body>
-  <!--Javascrip scripts-->
-  <script src="main.js"></script> 
+  <div class=""
+       id="root"></div><!--basic cards bootstrap-->
+  <div class="container">
+    <div class="row"></div>
+    <div class="row">
+      <div class="card-group">
+        <div class="card">
+          <img alt="pizzaCheese"
+               class="card-img-top"
+               src="/src/img/chzPizza2.JPG">Cheese Pizza
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img alt="PIzza&quot;"
+             class="card-img-top"
+             src="/src/img/PepperoniPizza.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Pepperoni Pizza</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img alt="Card image cap"
+             class="card-img-top"
+             src="/src/img/SupremePizza.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Supreme Pizza</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div><!--Bootstrap-->
   <script crossorigin="anonymous"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> 
@@ -27,6 +61,55 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> 
   <script crossorigin="anonymous"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> <!-- React -->
+   
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script> 
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script> 
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> <!-- My Scripts -->
+   
+  <script src="src/js/main.js"
+        type="text/babel"></script> <!-- <script src="/src/js/main.js"></script> -->
+   
+  <script type="text/babel">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            var root = document.getElementById('root'); 
+            var content = React.createElement('p', {}, "Our content here");
+            var content2 = React.createElement('ul', {},
+                React.createElement('li', {}, "First thing"),
+                React.createElement('li', {}, "Second thing"),);
+
+            /* ReactDOM.createElement(
+                1. what hmtl element do you want to make?,
+                2. Are there any attribute/properties you need to pass so that I can configure this new element?
+                3. What content shall i place in this element OR
+                4. (only if you have children) children (for nesting other elements) 
+                )
+            */
+       
+           var jsxcontent = (
+             <ul>
+              <li className="text-danger"> first thing</li>
+              <li className="text-warning"> second thing</li>
+             </ul>
+           );
+         ReactDOM.render(jsxcontent, root);
+
+         
+            
+  </script>
 </body>
 </html>
