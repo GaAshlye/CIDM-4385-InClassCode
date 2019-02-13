@@ -66,50 +66,10 @@
   <script src="https://unpkg.com/react@16/umd/react.development.js"></script> 
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script> 
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> <!-- My Scripts -->
-   
+   <!--My scripts--> 
+  <script src="src/js/ToDoList.js"></script> 
+  <script src="src/js/App.js"></script> 
   <script src="src/js/main.js"
         type="text/babel"></script> <!-- <script src="/src/js/main.js"></script> -->
-   
-  <script type="text/babel">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            var root = document.getElementById('root'); 
-            var content = React.createElement('p', {}, "Our content here");
-            var content2 = React.createElement('ul', {},
-                React.createElement('li', {}, "First thing"),
-                React.createElement('li', {}, "Second thing"),);
-
-            /* ReactDOM.createElement(
-                1. what hmtl element do you want to make?,
-                2. Are there any attribute/properties you need to pass so that I can configure this new element?
-                3. What content shall i place in this element OR
-                4. (only if you have children) children (for nesting other elements) 
-                )
-            */
-       
-           var jsxcontent = (
-             <ul>
-              <li className="text-danger"> first thing</li>
-              <li className="text-warning"> second thing</li>
-             </ul>
-           );
-         ReactDOM.render(jsxcontent, root);
-
-         
-            
-  </script>
 </body>
 </html>
