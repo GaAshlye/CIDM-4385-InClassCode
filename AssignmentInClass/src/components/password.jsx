@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-class paossword extends Component {
+class password extends Component {
     state = {  }
     render() { 
         return ( 
@@ -11,4 +11,4 @@ class paossword extends Component {
     }
 }
  
-export default paossword;
+export default password;
